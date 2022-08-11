@@ -68,7 +68,7 @@ function main() {
       var adgroup = adgroups.next();
           
       var variation =  ( value / adgroup.getStatsFor("LAST_30_DAYS").getCost()) / targetROAS; 
-      Logger.log("Now let's see which condition applies for " + adgroup.getName() + " " + key + " with cost: " + adgroup.getStatsFor("20200801","20201030").getCost() + " variation = " + variation);
+      Logger.log("Now let's see which condition applies for " + adgroup.getName() + " " + key + " with cost: " + adgroup.getStatsFor("20210801","20211030").getCost() + " variation = " + variation);
 
 
       if ( variation < 1.1 && variation > 0.9 ) {
